@@ -15,3 +15,7 @@
 include:
   - board: seeeduino_xiao_ble
     shield: hummingbird
+  - board: seeeduino_xiao_ble
+    shield: quef_left
+  - board: seeeduino_xiao_ble
+    shield: quef_right

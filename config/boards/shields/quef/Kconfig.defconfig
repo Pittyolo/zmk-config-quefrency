@@ -1,0 +1,20 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+
+if SHIELD_QUEF_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "quef"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_QUEF_LEFT || SHIELD_QUEF_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
