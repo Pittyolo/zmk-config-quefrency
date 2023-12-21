@@ -15,5 +15,5 @@
 include:
   - board: seeeduino_xiao_ble
     shield: quef_left
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: quef_right
