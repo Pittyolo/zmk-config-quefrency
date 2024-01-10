@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 
 
-if SHIELD_QUEF_LEFT
+if SHIELD_QUEF_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "quef"
