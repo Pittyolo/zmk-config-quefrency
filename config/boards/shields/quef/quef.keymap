@@ -13,10 +13,10 @@
         compatible = "zmk,keymap";
 
 // ----------------------------------------------      -----------------------------------------------------
-// | ESC  |  1   |  2  |  3   |  4  |  5  |  6  |      |  7  |  8  |  9  |  0  |  -  |  =  |  BKSPC |  `   |
-// | TAB   |  Q   |  W  |  E   |  R  |  T  |        |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \  | DEL  |
-// | LCTRL  |  A   |  S  |  D   |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGUP |
-// | SHIFT | Í | Z  |  X  |  C  |  V   |  B  |        |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |  UP | PGDN |
+// | 0    |  1   |  2  |  3   |  4  |  5  |  6  |      |  7  |  8  |  9  |  ö  |  ü  |  ó  |  BKSPC | DEL  |
+// | TAB   |  Q   |  W  |  E   |  R  |  T  |        |  Z  |  U  |  I  |  O  |  P  |  Ő  |  Ú  | ENT | INS  |
+// | ESC    |  A   |  S  |  D   |  F  |  G  |        |  H  |  J  |  K  |  L  |  É  |  Á  |  ű  |    | HOME |
+// | SHIFT | Í | Y  |  X  |  C  |  V   |  B  |        |  N  |  M  |  ,  |  .  |  -  |  RSHFT  |  UP | END  |
 // | LCTRL   | LGUI | LALT |   FN   | SPACE  |        |    SPACE    | RALT | FN | RCTRL | LFT | DWN | RGHT |
 // -------------------------------------------        ------------------------------------------------------
 
