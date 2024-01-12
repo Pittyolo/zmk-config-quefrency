@@ -17,16 +17,16 @@
 // | TAB   |  Q   |  W  |  E   |  R  |  T  |        |  Z  |  U  |  I  |  O  |  P  |  Ő  |  Ú  | ENT | INS  |
 // | ESC    |  A   |  S  |  D   |  F  |  G  |        |  H  |  J  |  K  |  L  |  É  |  Á  |  ű  |    | HOME |
 // | SHIFT | Í | Y  |  X  |  C  |  V   |  B  |        |  N  |  M  |  ,  |  .  |  -  |  RSHFT  |  UP | END  |
-// | LCTRL   | LGUI | LALT |   FN   | SPACE  |        |    SPACE    | RALT | FN | RCTRL | LFT | DWN | RGHT |
+// | LCTRL   | LGUI | LALT |   FN   | SPACE  |          |     SPACE     | RALT | RCTRL  | LFT | DWN | RGHT |
 // -------------------------------------------        ------------------------------------------------------
 
         default_layer {
             bindings = <
-    &kp GRAVE            &kp N1   &kp N2   &kp N3    &kp N4 &kp N5 &kp N6 /**/ &kp N7    &kp N8   &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp GRAVE
-    &kp TAB              &kp Q    &kp W    &kp E     &kp R  &kp T         /**/ &kp Y     &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT &kp BSLH &kp HOME
-    &kp ESC              &kp A    &kp S    &kp D     &kp F  &kp G         /**/ &kp H     &kp J    &kp K     &kp L     &kp SEMI  &kp SQT   &kp RET  &kp PG_UP
-    &kp LSHFT &kp NUBS  &kp Z    &kp X    &kp C     &kp V  &kp B         /**/ &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &kp UP   &kp PG_DN
-    &kp LCTRL            &kp LGUI &kp LALT &mo 1      &kp SPACE           /**/ &kp SPACE &kp RALT &mo 1     &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
+    &kp GRAVE            &kp N1   &kp N2   &kp N3    &kp N4 &kp N5 &kp N6 /**/ &kp N7    &kp N8   &kp N9    &kp N0    &kp MINUS &kp EQUAL      &kp BSPC      &kp DEL
+    &kp TAB              &kp Q    &kp W    &kp E     &kp R  &kp T         /**/ &kp Y     &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp RET  &kp INS
+    &kp ESC              &kp A    &kp S    &kp D     &kp F  &kp G         /**/ &kp H     &kp J    &kp K     &kp L     &kp SEMI  &kp SQT   &kp BSLH           &kp HOME
+    &kp LSHFT &kp NUBS  &kp Z    &kp X    &kp C     &kp V  &kp B         /**/  &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH      &kp RSHFT       &kp UP   &kp END
+    &kp LCTRL            &kp LGUI &kp LALT &mo 1      &kp SPACE           /**/ &kp SPACE          &kp RALT  &kp RCTRL                     &kp LEFT  &kp DOWN &kp RIGHT
             >;
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
