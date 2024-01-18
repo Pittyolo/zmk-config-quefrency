@@ -25,7 +25,7 @@
     &kp GRAVE            &kp N1   &kp N2   &kp N3    &kp N4 &kp N5 &kp N6 /**/ &kp N7    &kp N8   &kp N9    &kp N0    &kp MINUS &kp EQUAL      &kp BSPC      &kp DEL
     &kp TAB              &kp Q    &kp W    &kp E     &kp R  &kp T         /**/ &kp Y     &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp RET  &kp INS
     &kp ESC              &kp A    &kp S    &kp D     &kp F  &kp G         /**/ &kp H     &kp J    &kp K     &kp L     &kp SEMI  &kp SQT   &kp BSLH           &kp HOME
-    &kp LSHFT &kp NUBS  &kp Z    &kp X    &kp C     &kp V  &kp B         /**/  &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH      &kp RSHFT       &kp UP   &kp END
+    &kp LSHFT &kp NUBS  &kp Z    &kp X    &kp C     &kp V  &kp B         /**/  &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH      &kp RSHFT       &kp UP   &mo 1
     &kp LCTRL            &kp LGUI &kp LALT &mo 1      &kp SPACE           /**/ &kp SPACE          &kp RALT  &kp RCTRL                     &kp LEFT  &kp DOWN &kp RIGHT
             >;
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -34,9 +34,9 @@
 // ----------------------------------------------     -----------------------------------------------------
 // |BT_CLR|  F1  |  F2 |  F3  |  F4 |  F5 |  F6 |     |  F7 |  F8 |  F9 | F10 | F11 | F12 |        |BT_CLR|
 // |       | BT-0 | BT-1| BT-2 |     |     |       |     |     |     |     |     |     |     |     |      |
-// |        |      |     |      |     |     |       |     |     |     |     |     |     |          |      |
+// |        |      |     |      |     |     |       |     |     |     |     |     |     |     |    |      |
 // |         |      |     |     |      |     |       |     |     |     |     |     |         |     |      |
-// |         |      |     |     | bootloader |       |             |      |    |       |     |     |      |
+// |         |      |     |     | bootloader |         |               |      |        |     |     |      |
 // -------------------------------------------       ------------------------------------------------------
 
         fn_layer {
@@ -45,7 +45,7 @@
     &trans           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans        /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans &trans
     &trans           &trans       &trans       &trans       &trans &trans        /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
     &trans   &trans  &trans       &trans       &trans       &trans &trans        /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
-    &trans           &trans       &trans       &trans       &bootloader          /**/ &trans &trans &trans &trans  &trans  &trans  &trans
+    &sys_reset       &trans       &trans       &trans       &bootloader          /**/ &trans &trans &trans &trans  &bootloader  &sys_reset
             >;
         };
     };
