@@ -28,9 +28,8 @@ RC(4,0)  RC(4,1)  RC(4,2) RC(4,3)         RC(4,5)         /**/        RC(4,8)   
 };
 
 &i2c2 {
-    compatible = "nordic,nrf-twi";
-    sda-pin = <9>;
-    scl-pin = <10>;
+    pinctrl-0 = <&i2c2_scl_pb10 &i2c2_sda_pb9>;
+    pinctrl-names = "default";
 
     status = "okay";
 
