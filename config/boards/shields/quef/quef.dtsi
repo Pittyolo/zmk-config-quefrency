@@ -29,8 +29,11 @@ RC(4,0)  RC(4,1)  RC(4,2) RC(4,3)         RC(4,5)         /**/        RC(4,8)   
 
 &i2c2 {
     compatible = "nordic,nrf-twi";
-    sda-pin = <17>;
-    scl-pin = <20>;
+    sda-pin = <9>;
+    scl-pin = <10>;
+};
+
+&i2c2 {
     status = "okay";
 
     oled: ssd1306@3c {
