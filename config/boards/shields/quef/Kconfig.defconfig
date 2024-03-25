@@ -45,6 +45,11 @@ config I2C
 config SSD1306
     default y
 
+#custom display test
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
 endif # ZMK_DISPLAY
 
 if LVGL
