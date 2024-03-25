@@ -6,11 +6,11 @@
 
 #include "custom_status_screen.h"
 #include "widgets/battery_status.h"
-#include "widgets/modifiers.h"
-#include "widgets/bongo_cat.h"
+//#include "widgets/modifiers.h"
+//#include "widgets/bongo_cat.h"
 #include "widgets/layer_status.h"
 #include "widgets/output_status.h"
-#include "widgets/hid_indicators.h"
+//#include "widgets/hid_indicators.h"
 
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
@@ -18,12 +18,12 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 static struct zmk_widget_output_status output_status_widget;
 static struct zmk_widget_layer_status layer_status_widget;
 static struct zmk_widget_peripheral_battery_status peripheral_battery_status_widget;
-static struct zmk_widget_modifiers modifiers_widget;
-static struct zmk_widget_bongo_cat bongo_cat_widget;
+//static struct zmk_widget_modifiers modifiers_widget;
+//static struct zmk_widget_bongo_cat bongo_cat_widget;
 
-#if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
-static struct zmk_widget_hid_indicators hid_indicators_widget;
-#endif
+//#if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
+//static struct zmk_widget_hid_indicators hid_indicators_widget;
+//#endif
 
 lv_style_t global_style;
 
