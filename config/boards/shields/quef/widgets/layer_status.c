@@ -1,8 +1,7 @@
 /*
+ * Copyright (c) 2020 The ZMK Contributors
  *
- * Copyright (c) 2021 Darryl deHaan
  * SPDX-License-Identifier: MIT
- *
  */
 
 #include <zephyr/kernel.h>
@@ -10,7 +9,7 @@
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include <zmk/display.h>
-#include "layer_status.h"
+#include <zmk/display/widgets/layer_status.h>
 #include <zmk/events/layer_state_changed.h>
 #include <zmk/event_manager.h>
 #include <zmk/endpoints.h>
@@ -24,17 +23,18 @@ struct layer_status_state {
 };
 
 static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
-    const char *layer_label = state.label;
-    uint8_t active_layer_index = state.index;
+    if (state.label == NULL) {
+        char text[7] = {};
 
-    if (layer_label == NULL) {
-        char text[6] = {};
-
-        sprintf(text, " %i", active_layer_index);
+        sprintf(text, "%i", state.index);
 
         lv_label_set_text(label, text);
     } else {
-        lv_label_set_text(label, layer_label);
+        char text[13] = {};
+
+        snprintf(text, sizeof(text), "%s", state.label);
+
+        lv_label_set_text(label, text);
     }
 }
 
@@ -45,7 +45,10 @@ static void layer_status_update_cb(struct layer_status_state state) {
 
 static struct layer_status_state layer_status_get_state(const zmk_event_t *eh) {
     uint8_t index = zmk_keymap_highest_layer_active();
-    return (struct layer_status_state){.index = index, .label = zmk_keymap_layer_name(index)};
+    return (struct layer_status_state) {
+        .index = index,
+        .label = zmk_keymap_layer_name(index)
+    };
 }
 
 ZMK_DISPLAY_WIDGET_LISTENER(widget_layer_status, struct layer_status_state, layer_status_update_cb,
