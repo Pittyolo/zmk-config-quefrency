@@ -52,6 +52,10 @@ config SSD1306
 
 endif # ZMK_DISPLAY
 
+#Custom widget
+menuconfig CONFIG_CUSTOM_WIDGET_PERIPHERAL_BATTERY_STATUS
+    bool "custom peripheral battery status widget"
+
 if LVGL
 
 config LV_Z_MEM_POOL_SIZE
