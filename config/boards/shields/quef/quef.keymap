@@ -25,10 +25,10 @@
     &kp GRAVE            &kp N1   &kp N2   &kp N3    &kp N4 &kp N5 &kp N6 /**/ &kp N7    &kp N8   &kp N9    &kp N0    &kp MINUS &kp EQUAL      &kp BSPC      &kp DEL
     &kp TAB              &kp Q    &kp W    &kp E     &kp R  &kp T         /**/ &kp Y     &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp RET  &kp INS
     &kp ESC              &kp A    &kp S    &kp D     &kp F  &kp G         /**/ &kp H     &kp J    &kp K     &lt 1 L   &kp SEMI  &kp SQT   &kp BSLH           &kp HOME
-    &kp LSHFT &kp NUBS  &kp Z    &kp X    &kp C     &kp V  &kp B         /**/  &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH      &kp RSHFT       &kp UP   &kp END
+    &kp LSHFT &kp NUBS  &kp Z    &kp X    &kp C     &kp V  &kp B         /**/  &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH      &kp RSHFT       &kp UP   &kp END   &kp C_MUTE
     &kp LCTRL            &kp LGUI &kp LALT &mo 1      &kp SPACE           /**/ &kp BSPC           &kp RALT  &kp RCTRL                     &kp LEFT  &kp DOWN &kp RIGHT
             >;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
 // ----------------------------------------------     -----------------------------------------------------
@@ -44,7 +44,7 @@
     &bt BT_CLR       &kp F1       &kp F2       &kp F3       &kp F4 &kp F5 &kp F6 /**/ &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &bt BT_CLR
     &trans           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans        /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans &trans
     &trans           &trans       &trans       &trans       &trans &trans        /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
-    &trans   &trans  &trans       &trans       &trans       &trans &trans        /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
+    &trans   &trans  &trans       &trans       &trans       &trans &trans        /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans   &trans
     &sys_reset       &trans       &trans       &trans       &bootloader          /**/ &trans &trans &trans &trans  &bootloader  &sys_reset
             >;
         };
