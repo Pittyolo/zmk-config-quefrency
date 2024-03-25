@@ -1,6 +1,6 @@
 /*
  *
- * Copyright (c) 2024 The ZMK Contributors
+ * Copyright (c) 2021 Darryl deHaan
  * SPDX-License-Identifier: MIT
  *
  */

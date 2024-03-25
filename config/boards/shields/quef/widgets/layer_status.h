@@ -1,7 +1,8 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
  *
+ * Copyright (c) 2021 Darryl deHaan
  * SPDX-License-Identifier: MIT
+ *
  */
 
 #pragma once
