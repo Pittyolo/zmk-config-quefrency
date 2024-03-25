@@ -11,9 +11,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 #custom display stuff
-choice ZMK_DISPLAY_STATUS_SCREEN
-    default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
-endchoice
+#choice ZMK_DISPLAY_STATUS_SCREEN
+#    default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+#endchoice
 #
 #config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
 #    select LV_USE_LABEL
@@ -37,6 +37,18 @@ if SHIELD_QUEF_LEFT || SHIELD_QUEF_RIGHT
 config ZMK_SPLIT
     default y
 
+#from corneishZen
+config ZMK_DISPLAY
+    select LV_USE_CONT
+    select LV_FONT_MONTSERRAT_26
+    select LV_FONT_MONTSERRAT_16
+    select LV_USE_LABEL
+    select LV_USE_IMG
+
+choice ZMK_DISPLAY_STATUS_SCREEN
+    default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+endchoice
+
 if ZMK_DISPLAY
 
 config I2C
@@ -51,6 +63,19 @@ config SSD1306
 #endchoice
 
 endif # ZMK_DISPLAY
+
+#from corneishZen
+menuconfig CUSTOM_WIDGET_BATTERY_STATUS
+    bool "custom battery status widget"
+
+menuconfig CUSTOM_WIDGET_OUTPUT_STATUS
+    bool "custom output status widget"
+
+menuconfig CUSTOM_WIDGET_LAYER_STATUS
+    bool "custom layer status widget"
+
+menuconfig CUSTOM_WIDGET_PERIPHERAL_STATUS
+    bool "custom peripheral status widget"
 
 if LVGL
 
