@@ -10,6 +10,21 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+endif
+
+if SHIELD_QUEF_LEFT || SHIELD_QUEF_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
 #custom display stuff
 choice ZMK_DISPLAY_STATUS_SCREEN
     default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
@@ -29,21 +44,6 @@ config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
 choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
-
-endif
-
-if SHIELD_QUEF_LEFT || SHIELD_QUEF_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-if ZMK_DISPLAY
-
-config I2C
-    default y
-
-config SSD1306
-    default y
 
 endif # ZMK_DISPLAY
 
