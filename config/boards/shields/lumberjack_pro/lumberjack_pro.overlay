@@ -7,10 +7,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "lumberjack_pro-layouts.dtsi"
 
-&physical_layout_0 {
-    transform = <&default_transform>;
-};
-
+/*
+*&physical_layout_0 {
+*    transform = <&default_transform>;
+*};
+*/
 / {
     chosen {
         zmk,kscan = &kscan0;
