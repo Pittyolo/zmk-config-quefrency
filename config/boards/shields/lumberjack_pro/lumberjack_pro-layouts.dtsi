@@ -5,6 +5,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Lumberjack_Pro Layout";
 
+        kscan = <&kscan0>;
         transform = <&default_transform>;
 
 /*        kscan = <&kscan0>;
