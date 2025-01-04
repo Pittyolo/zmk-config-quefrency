@@ -9,14 +9,9 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-
         zmk,matrix_transform = &default_transform;
     };
 
-    /*
-     * This transform correspondsto the 60% left without macro keypad and 65% right, even this
-     * combination of PCBs can have keys in different locations based on configuration.
-     */
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <15>;
@@ -30,17 +25,3 @@ RC(4,0)  RC(4,1)  RC(4,2) RC(4,3)         RC(4,5)         /**/        RC(4,8)   
         >;
     };
 };
-/* ROTARY_SWITCH: RC(4,0)
-*    right_encoder: encoder_left {
-*        compatible = "alps,ec11";
-*        a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-*        b-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-*        steps = <80>;
-*    };
-*    sensors: sensors {
-*        compatible = "zmk,keymap-sensors";
-*        sensors = <&right_encoder>;
-*        triggers-per-rotation = <20>;
-*    };
-*};
-*/

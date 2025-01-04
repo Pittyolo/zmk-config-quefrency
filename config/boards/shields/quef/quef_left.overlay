@@ -7,8 +7,6 @@
 #include "quef.dtsi"
 
 / {
-    /* NEEDS TO BE MODIFIED
-     */
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
