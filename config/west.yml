@@ -5,20 +5,20 @@ manifest:
     - name: caksoylar # <-- new entry
       url-base: https://github.com/caksoylar
     # support nice_oled and nice_epaper
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+  #    - name: mctechnology17
+  #      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
-      #      revision: main
-      revision: v0.3.0 #pin to 0.3 for the display widget
+      revision: main
+      #revision: v0.3.0 #pin to 0.3 for the display widget
       import: app/west.yml
     - name: zmk-rgbled-widget # <-- new entry
       remote: caksoylar
       revision: main
     # support nice_oled and nice_epaper
-    - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: main
+  #    - name: zmk-nice-oled
+  #      remote: mctechnology17
+  #      revision: main
   self:
     path: config
