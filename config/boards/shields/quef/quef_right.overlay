@@ -12,10 +12,10 @@
 
 /*/ {
 
-/*    chosen {
-*        zephyr,display = &oled;
-*    };
-*/
+    chosen {
+        zephyr,display = &oled;
+    };
+
 /*    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
@@ -43,7 +43,11 @@
             ;
     };
 
-/ {        right_encoder: encoder_right {
+/ {     
+/*    chosen {
+        zephyr,display = &oled;
+    };*/
+        right_encoder: encoder_right {
             compatible = "alps,ec11";
             a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             b-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -57,7 +61,7 @@
             triggers-per-rotation = <20>;
         };
 };
-/*
+
 &pinctrl {
     i2c0_default: i2c0_default {
         group1 {
@@ -94,4 +98,3 @@
         prechargep = <0x22>;
     };
 };
-*/

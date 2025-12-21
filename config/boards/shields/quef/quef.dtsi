@@ -10,6 +10,7 @@
 / {
     chosen {
         zmk,physical-layout = &physical_layout_0;
+        zephyr,display = &oled;
     };
 
     default_transform: keymap_transform_0 {
