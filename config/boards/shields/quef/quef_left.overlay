@@ -8,11 +8,11 @@
 
 / {
     kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
+/*        compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
         wakeup-source;
-
+*/
 
         col-gpios
             = <&gpio0 2 GPIO_ACTIVE_HIGH>
