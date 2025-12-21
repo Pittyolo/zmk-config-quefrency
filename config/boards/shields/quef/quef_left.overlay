@@ -6,13 +6,6 @@
 
 #include "quef.dtsi"
 
-/*/ {
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
-        diode-direction = "col2row";
-        wakeup-source;
-*/
 &kscan0 {
         col-gpios
             = <&gpio0 2 GPIO_ACTIVE_HIGH>
