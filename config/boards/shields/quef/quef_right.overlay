@@ -44,9 +44,9 @@
     };
 
 / {     
-/*    chosen {
+    chosen {
         zephyr,display = &oled;
-    };*/
+    };
         right_encoder: encoder_right {
             compatible = "alps,ec11";
             a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
