@@ -12,10 +12,10 @@
 
 / {
 
-    chosen {
-        zephyr,display = &oled;
-    };
-
+/*    chosen {
+*        zephyr,display = &oled;
+*    };
+*/
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
@@ -56,7 +56,7 @@
             triggers-per-rotation = <20>;
         };
 };
-
+/*
 &pinctrl {
     i2c0_default: i2c0_default {
         group1 {
@@ -93,3 +93,4 @@
         prechargep = <0x22>;
     };
 };
+*/

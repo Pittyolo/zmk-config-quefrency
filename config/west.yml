@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: caksoylar # <-- new entry
+    - name: caksoylar #rgb widget for xiao seeed
       url-base: https://github.com/caksoylar
     # support nice_oled and nice_epaper
   #    - name: mctechnology17
@@ -13,7 +13,7 @@ manifest:
       #revision: main
       revision: v0.3.0 #pin to 0.3 for now
       import: app/west.yml
-    - name: zmk-rgbled-widget # <-- new entry
+    - name: zmk-rgbled-widget #rgb widget for xiao seeed
       remote: caksoylar
       revision: main
     # support nice_oled and nice_epaper
